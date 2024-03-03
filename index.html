@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Employee Management System</h1>
+        <div id="employee-list">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-table-body"></tbody>
+            </table>
+        </div>
+        <div id="add-employee">
+            <h2>Add Employee</h2>
+            <form id="employee-form">
+                <label for="employee-id">ID:</label>
+                <input type="number" id="employee-id" required>
+                <label for="employee-name">Name:</label>
+                <input type="text" id="employee-name" required>
+                <label for="employee-salary">Salary:</label>
+                <input type="number" id="employee-salary" required>
+                <button type="button" onclick="addEmployee()">Add Employee</button>
+            </form>
+        </div>
+        <div id="delete-employee">
+            <h2>Delete Employee</h2>
+            <label for="delete-id">Enter ID to delete:</label>
+            <input type="number" id="delete-id" required>
+            <button type="button" onclick="deleteEmployee()">Delete Employee</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
